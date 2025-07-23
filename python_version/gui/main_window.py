@@ -18,6 +18,7 @@ sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
 
 from core.horoscope_generator import HoroscopeGenerator
 from data.cities import myanmar_cities
+from gui.font_manager import font_manager
 
 
 class MyanmarAstroHoroGUI:
@@ -187,7 +188,7 @@ Based on Surya Siddhanta Theory
 
 Original Developer: Kaung Paing (2002/2003)
 VB6 Maintainer: kokoye2007
-Python Rewrite: FOSS Myanmar Community
+Python Rewrite: Kyle Sin Lynn
 
 Features:
 • Complete horoscope generation
