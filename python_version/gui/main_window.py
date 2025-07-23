@@ -12,8 +12,12 @@ from datetime import datetime, date
 import json
 from typing import Dict, Any
 
-from ..core.horoscope_generator import HoroscopeGenerator
-from ..data.cities import myanmar_cities
+import sys
+import os
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
+
+from core.horoscope_generator import HoroscopeGenerator
+from data.cities import myanmar_cities
 
 
 class MyanmarAstroHoroGUI:

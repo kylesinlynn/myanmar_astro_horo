@@ -9,10 +9,14 @@ house calculations, and astrological interpretations.
 import math
 from datetime import datetime, timedelta
 from typing import Dict, List, Tuple, Any
-from .astronomical_calculations import AstronomicalCalculations
-from .calendar_system import MyanmarCalendarSystem
-from .nakshatra_system import NakshatraSystem
-from ..data.cities import myanmar_cities
+import sys
+import os
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
+
+from core.astronomical_calculations import AstronomicalCalculations
+from core.calendar_system import MyanmarCalendarSystem
+from core.nakshatra_system import NakshatraSystem
+from data.cities import myanmar_cities
 
 
 class HoroscopeGenerator:

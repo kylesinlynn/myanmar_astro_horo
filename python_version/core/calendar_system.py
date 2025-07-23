@@ -9,7 +9,11 @@ and traditional time systems used in Myanmar astrology.
 import math
 from datetime import datetime, timedelta
 from typing import Tuple, Dict, List
-from .astronomical_calculations import AstronomicalCalculations
+import sys
+import os
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
+
+from core.astronomical_calculations import AstronomicalCalculations
 
 
 class MyanmarCalendarSystem:
